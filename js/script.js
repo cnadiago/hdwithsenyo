@@ -1,11 +1,15 @@
-// javascript untuk prompt ganti nama 
-function replaceUser(){
-    let User = prompt("Isi nama kamu di sini","Seseorang");
-    document.getElementById("User").innerHTML = User;
+document.addEventListener("DOMContentLoaded", function () {
+    const popup = document.querySelector(".popup-container");
+    const closePopupBtn = document.querySelector(".close-popup");
+    const header = document.querySelector(".header-container");
 
-}
+    // Saat klik tombol "Enter"
+    closePopupBtn.addEventListener("click", function () {
+        popup.classList.add("hidden"); // Hilangkan pop-up
+        header.classList.add("show"); // Munculkan header
+    });
+});
 
-replaceUser();
 
 // javascript untuk banner
 
